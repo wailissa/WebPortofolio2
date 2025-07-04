@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <!----Font awesome cdn  font icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Google Font: Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-i"></i>
+            <div class="logo-text">Ilham Wailissa</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portofolio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="photo1.jpeg" alt="profile pic" />
+          </div>
+          <div class="hero-text">
+            
+            <h5>Hi I'm <span class="input">Videographer & Desainer Grafis</span></h5>
+            <h1>Ilham Wailissa</h1>
+            <p>
+              
+            </p>
+
+       <div class="btn-group">
+  <a href="#" class="btn" id="downloadBtn">Download CV</a>
+  <a href="https://wa.me/62895358373170" class="btn" target="_blank">Contact</a>
+</div>
+
+<!-- Wadah gambar muncul -->
+<div id="cvImage" style="display: none; text-align: center; margin-top: 20px;">
+  <img src="DownloadCV.jpeg" alt="CV Preview" style="max-width: 80%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+</div>
+
+
+<div class="social">
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/ilhamw2107" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://www.youtube.com/@ilhamcraft7325" target="_blank">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@iwailissanz21" target="_blank">
+    <i class="fa-brands fa-tiktok"></i>
+  </a>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      /** creating button click show hide navbar **/
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+
+      var typed = new Typed(".input", {
+        strings: ["Videographer", "Desainer Grafis"],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop: true,
+      });
+    </script>
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+    <!-- Script eksternal -->
+    <script src="main.js"></script>
+    <script>
+  const downloadBtn = document.getElementById('downloadBtn');
+  const cvImage = document.getElementById('cvImage');
+
+  downloadBtn.addEventListener('click', function (e) {
+    e.preventDefault(); // Mencegah link reload halaman
+
+    // Tampilkan atau sembunyikan gambar CV
+    if (cvImage.style.display === 'none' || cvImage.style.display === '') {
+      cvImage.style.display = 'block';
+      downloadBtn.textContent = 'Hide CV';
+    } else {
+      cvImage.style.display = 'none';
+      downloadBtn.textContent = 'Download CV';
+    }
+  });
+</script>
+<!-- Script eksternal -->
+<script src="main.js"></script>
+
+<!-- Script untuk tombol Download CV -->
+<script>
+  // ... (kode JavaScript di atas)
+</script>
+
+</body>
+</html>
+
+  </body>
+</html>
